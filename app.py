@@ -20,7 +20,7 @@ def get_db():
         port=3306,
         user="flaskuser",
         password="password",
-        database="ecom2728db",
+        database="ecomdb",
         ssl_disabled=True,
         autocommit=False
     )
