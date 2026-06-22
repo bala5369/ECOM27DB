@@ -16,12 +16,10 @@ client = razorpay.Client(auth=("rzp_test_SzpueAQMszUU1s", "rHMhfNDJwnrBBbxQ1dAqR
 #mydb=connection.MySQLConnection(user='root',host='localhost',password='vardhan@1',db='ecom2728db')
 def get_db():
     return connection.MySQLConnection(
-        host="127.0.0.1",
-        port=3306,
+        host="localhost",
         user="flaskuser",
         password="password",
         database="ecomdb",
-        ssl_disabled=True,
         autocommit=False
     )
 
