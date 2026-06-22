@@ -83,7 +83,7 @@ app=Flask(__name__)
 app.secret_key = "code123"
 app.wsgi_app = ProxyFix(app.wsgi_app,x_proto=1,x_host=1)
 app.permanent_session_lifetime=timedelta(days=1)
-CORS(app,supports_credentials=True,origins=["http://localhost:5173"])
+CORS(app,supports_credentials=True)
 app.config["PREFERED_URL_SCHEME"] = "https"
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 app.config["SESSION_COOKIE_SECURE"] = False
